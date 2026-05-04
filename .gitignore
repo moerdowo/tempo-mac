@@ -1,0 +1,21 @@
+node_modules
+dist
+src-tauri/target
+src-tauri/gen
+.DS_Store
+*.log
+.vite
+tsconfig.tsbuildinfo
+
+# Defense-in-depth: never commit secrets, keys, or local env
+.env
+.env.*
+*.local
+*.pem
+*.key
+*.p12
+*.keystore
+secrets/
+.tempo/
+keys.toml
+
