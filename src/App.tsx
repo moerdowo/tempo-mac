@@ -128,7 +128,7 @@ export default function App() {
   if (bootstrapping) {
     return (
       <div className="app">
-        <div className="titlebar">Tempo</div>
+        <div className="titlebar" data-tauri-drag-region>Tempo</div>
         <div className="content">
           <main className="main">
             <div className="empty" style={{ paddingTop: 80 }}>
@@ -143,7 +143,7 @@ export default function App() {
   if (!entry) {
     return (
       <div className="app">
-        <div className="titlebar">
+        <div className="titlebar" data-tauri-drag-region>
           Tempo<span className="net">· {network === 'testnet' ? 'Moderato Testnet' : 'Mainnet'}</span>
         </div>
         <div className="content">
@@ -169,7 +169,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <div className="titlebar">
+      <div className="titlebar" data-tauri-drag-region>
         Tempo<span className="net">· {network === 'testnet' ? 'Moderato Testnet' : 'Mainnet'}</span>
       </div>
       <div className="content">

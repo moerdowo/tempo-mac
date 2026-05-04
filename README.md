@@ -5,6 +5,8 @@ official Tempo Wallet (passkey-backed), check stablecoin balances, send transfer
 discover Machine Payments Protocol services, and pay for HTTP services directly
 from your desktop.
 
+![Tempo Mac — Services tab with auto-generated form for a paid endpoint](docs/preview.jpg)
+
 Built with **Tauri 2** (Rust + WKWebView), **React 19**, **viem**, and the
 [`accounts`](https://www.npmjs.com/package/accounts) and
 [`mppx`](https://www.npmjs.com/package/mppx) SDKs.

@@ -36,7 +36,6 @@ body { background: linear-gradient(180deg, #0d0d10, #15151a); }
 }
 
 .titlebar {
-  -webkit-app-region: drag;
   height: 36px;
   display: flex;
   align-items: center;
@@ -46,7 +45,13 @@ body { background: linear-gradient(180deg, #0d0d10, #15151a); }
   color: var(--text-dim);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  user-select: none;
+  cursor: grab;
 }
+.titlebar:active { cursor: grabbing; }
+/* All children inherit the drag region by default; explicit children need
+   data-tauri-drag-region too if pointer events would otherwise block drags. */
+.titlebar * { pointer-events: none; }
 .titlebar .net { color: var(--accent); margin-left: 8px; }
 
 .content {
