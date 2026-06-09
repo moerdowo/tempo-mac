@@ -95,3 +95,7 @@ This is exactly how an agent uses Tempo from the terminal — but with a UI on t
 | Moderato (testnet) | 42431 | https://rpc.moderato.tempo.xyz |
 
 Switch via the link in the sidebar footer.
+
+## License
+
+Released under the [MIT License](LICENSE).
